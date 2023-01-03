@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>html</title>
+	</head>
+	<body>
+		<h1>welcome to fabevy technologies</h1>
+		the nave :{{data}}
+		<table border="1">
+			<tr>
+				<th>scheme_code</th>
+				<th>fund_house</th>
+				<th>nav</th>
+			</tr>
+			{%for i in data:%}
+			<tr>
+				<td>{{i.id}}</td>
+				<td>{{i.house}}</td>
+				<td>{{i.nav}}</td>
+			</tr>
+			{%endfor%}
+		</table>
+	</body>
+</html>
